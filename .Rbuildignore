@@ -1,3 +1,6 @@
 ^sum776live\.Rproj$
 ^\.Rproj\.user$
 ^dev$
+^README\.Rmd$
+^\.github$
+^codecov\.yml$

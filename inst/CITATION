@@ -1,0 +1,29 @@
+pkgVer <- function(pkg) {
+    if (!exists("meta") || is.null(meta)) meta <- packageDescription(pkg)
+    ver <- meta$Version
+    paste0('https://github.com/lcolladotor/sum776live/', pkg, ' - R package version ', ver)
+}
+
+c(
+
+    bibentry(bibtype="manual",
+        title = "sum776live",
+        author = personList(
+            as.person("lcolladotor")
+        ),
+        year = format(Sys.Date(), "%Y"),
+        url = "http://www.bioconductor.org/packages/sum776live",
+        note = pkgVer('sum776live'),
+        doi = '10.18129/B9.bioc.sum776live'
+    ),
+    bibentry(bibtype="article",
+        title = "sum776live",
+        author = personList(
+            as.person("lcolladotor")
+        ),
+        year = format(Sys.Date(), "%Y"),
+        journal = "bioRxiv",
+        doi = "10.1101/TODO",
+        url = "https://www.biorxiv.org/content/10.1101/TODO"
+    )
+)
